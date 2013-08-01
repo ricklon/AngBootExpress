@@ -36,11 +36,15 @@ if ('development' == app.get('env')) {
 }
 
 app.get("/", function(req, res){
+    var name = req.query.name;
     res.render("index.ejs", {
         layout:false,
-        hello:"Hello World!"
+        hello:"Hello World! " + name
     });
 });
+
+
+
 
 
 http.createServer(app).listen(app.get('port'), function(){
