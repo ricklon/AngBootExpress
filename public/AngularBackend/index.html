@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="project">
+  <head>
+    <title>Backend Angualr tutorial with Angular Bootstrap Template 001</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../bower_components/css/site.css" rel="stylesheet" media="screen" />
+    <script src="../bower_components/angular/angular.js"></script>
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js" /> -->
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="../bower_components/angularFire/angularFire.js"></script>
+    <script src="project.js"></script>
+
+  </head>
+  <body>
+  <div class="navbar navbar-static-top  navbar-inverse">
+  <div class="navbar-inner">
+  
+    <a class="brand" href="#">AWDT</a>
+    <ul class="nav">
+      <li  ><a href="../index.html">Home</a></li>
+      <li  class="divider-vertical"><a href="../AngularForm/index.html">AngularForm</a></li>
+       <li class="divider-vertical"><a href="../AngularTodo/Todo.html">AngularTodoDemo</a></li>
+      <li  class="active" class="divider-vertical"><a href="index.html">AngularBackendDemo</a></li>
+        <form class="navbar-search pull-left">
+            <input type="text" class="search-query" placeholder="Search">
+        </form>
+    </ul>
+  </div>
+</div>
+    <!-- page content -->
+ <h2>JavaScript Projects</h2>
+    <div ng-view></div>
+    <!-- page end content -->
+    <!-- Load scripts at bottom of page -->
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bower_components/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app>
+    
+    <head>
+        <title>Angular Form Tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="../bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        media="screen" />
+        <link href="../bower_components/css/site.css" rel="stylesheet" media="screen"
+        />
+        <script src="../bower_components/angular/angular.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-static-top  navbar-inverse">
+            <div class="navbar-inner">
+                <a class="brand" href="#">AWDT</a>
+                <ul class="nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="active" class="divider-vertical">
+                        <a href="index.html">AngularForm</a>
+                    </li>
+                    <li  class="divider-vertical">
+                        <a href="../AngularTodo/Todo.html">AngularTodoDemo</a>
+                    </li>
+                    <li class="divider-vertical">
+                        <a href="../AngularBackend/index.html">AngularBackendDemo</a>
+                    </li>
+                    <form class="navbar-search pull-left">
+                        <input type="text" class="search-query" placeholder="Search">
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+        </div>
+        <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <input type="text" ng-model="LastName" placeholder="Last name here">
+            <input type="text" ng-model="email" placeholder="Enter Email here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+            <h2>Last Name: {{LastName}}</h2>
+            <h2>Email: {{email}}</h2>
+        </div>
+        <script src="../bower_components/jquery/jquery.min.js"></script>
+        <script src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../bower_components/js/site.js"></script>
+    </body>
+
+</html>
