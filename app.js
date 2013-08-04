@@ -14,10 +14,16 @@ var express = require('express'),
 
 var app = express(),
     db = mongojs("appdb",["appdb"]);
-    
+ 
+ 
+//Rotten tomatoes key
+var key = "t7hguhwcm7d7nx5zpwjk4re9";
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
+
+//ejs documentation: https://github.com/visionmedia/ejs
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
@@ -36,11 +42,30 @@ if ('development' == app.get('env')) {
 }
 
 app.get("/", function(req, res){
-    var name = req.query.name;
+    var title = req.query.title;
+    res.send("Title: " + title);
+    console.log(req.route);
+    
+    
+    request('http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey='+key+'&q='+title, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            body = JSON.parse(body);
+            console.log(body.movies);
+            
+            for (ii = 0; ii < body.movies[0].abridged_cast.length; ii++ ){
+                console.log(body.movies[0].abridged_cast[ii]);
+            }
+            
+        }
+    });
+
+    
+    /*
     res.render("index.ejs", {
         layout:false,
-        hello:"Hello World! " + name
+        title:  title
     });
+    */
 });
 
 

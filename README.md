@@ -13,6 +13,7 @@ npm install express-partials
 npm install mongojs
 npm install less-middleware
 npm install ejs
+npm install consolidate
 
 ```
 

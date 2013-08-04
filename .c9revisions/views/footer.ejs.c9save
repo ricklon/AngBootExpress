@@ -1,0 +1,2 @@
+{"ts":1375307171084,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1375307184444,"patch":[[{"diffs":[[1,"\r\n  \r\n    <!-- Load scripts at bottoom of page -->\r\n    <script src=\"bower_components/jquery/jquery.min.js\"></script>\r\n    <script src=\"bower_components/bootstrap/js/bootstrap.min.js\"></script>\r\n    <script src=\"bower_components/js/site.js\"></script>\r\n  </body>\r\n</html>\r\n"]],"start1":0,"start2":0,"length1":0,"length2":272}]],"length":272,"saved":false}
