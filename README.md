@@ -23,7 +23,9 @@ bower install angular
 bower install jquery
 bower install --save http://twitter.github.com/bootstrap/assets/bootstrap.zip
 ```
+
 Optional:
+
 ```
 cd bower_components
 curl -LO https://github.com/twbs/bootstrap/archive/3.0.0-wip.zip
